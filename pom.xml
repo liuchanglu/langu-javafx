@@ -21,19 +21,25 @@
                 <configuration>
 
 
+                    <!-- 打包的时候要不要显示详情-->
+                    <verbose>true</verbose>
                     <!-- 启动类 -->
                     <mainClass>com.langu.Main</mainClass>
                     <!-- 运行文件名 -->
                     <appName>${project.build.finalName}</appName>
-                    <!-- 图标的位置，默认位置 src/main/deploy 自己定义的不起作用，神奇了 -->
-                    <deployDir>${basedir}/images</deployDir>
+                    <!-- 图标的位置，默认位置 src/main/deploy-->
+                    <deployDir>${basedir}/src/main/resources/images/</deployDir>
                     <!-- 菜单 -->
                     <needMenu>true</needMenu>
                     <!-- 桌面图标 -->
                     <needShortcut>true</needShortcut>
                     <!-- 公司名称 -->
                     <vendor>Langu</vendor>
-
+                    <bundleArguments>
+                        <icon.ico>src/main/resources/images/langu-javafx-1.0-SNAPSHOT.ico</icon.ico>
+                        <!--<icon.png>src/main/resources/icons/Icon_32.png</icon.png>
+                        <icon.icns>src/main/resources/icons/Icon.icns</icon.icns>-->
+                    </bundleArguments>
 
                 </configuration>
 
