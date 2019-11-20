@@ -1,2 +1,3 @@
 com\langu\Main.class
-com\langu\controller\LoginController.class
+com\langu\controller\Page1Controller.class
+com\langu\controller\HomeController.class

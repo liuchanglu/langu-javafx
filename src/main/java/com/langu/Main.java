@@ -16,15 +16,14 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
-
-
-
-
-        Parent root = FXMLLoader.load(getClass().getResource("/Login.fxml"));
+         Parent root = FXMLLoader.load(getClass().getResource("/Home.fxml"));
         Scene scene = new Scene(root);
+//        primaryStage.initStyle(StageStyle.TRANSPARENT);
+
         primaryStage.setTitle("javaFx");
         primaryStage.setScene(scene);
         primaryStage.show();
+
     }
 
     public static void main(String[] args) {
